@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Login Screen",
+      "screenshotURL": "https://picsum.photos/id/237/200/300",
+      "description": "The login screen allows users to sign in to the app."
+    },
+    {
+      "id": 2,
+      "title": "Dashboard",
+      "screenshotURL": "https://picsum.photos/536/354",
+      "description": "The dashboard displays user data and statistics in an interactive chart."
+    },
+    {
+      "id": 3,
+      "title": "Settings",
+      "screenshotURL": "https://picsum.photos/200/300/?blur=2",
+      "description": "In the settings screen, users can customize their preferences."
+    },
+    {
+      "id": 4,
+      "title": "Profile",
+      "screenshotURL": "https://picsum.photos/200/300?grayscale",
+      "description": "The profile screen shows user information and allows for profile editing."
+    }
+  ]
