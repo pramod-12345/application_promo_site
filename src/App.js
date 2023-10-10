@@ -1,68 +1,57 @@
-import React from "react";
-import screenshotData from "./applicationData.json";
-
-const MobileFrame = ({ screenshotData }) => {
-  const frameStyle = {
-    border: "1px solid red",
-    borderRadius: "10px",
-    margin: "20px",
-    padding: "10px",
-    boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-    maxWidth: "300px",
-    textAlign: "center",
-  };
-
-  const imageStyle = {
-    width: "100%",
-    borderRadius: "5px",
-  };
-
-  const descriptionStyle = {
-    marginTop: "10px",
-    fontSize: "16px",
-  };
-
-  return (
-    <div style={frameStyle}>
-      <img
-        src={screenshotData.screenshotURL}
-        alt={screenshotData.title}
-        style={imageStyle}
-      />
-      <div style={descriptionStyle}>{screenshotData.description}</div>
-    </div>
-  );
-};
+import React, { useState } from "react";
+import "./App.css";
+import data from "./data.json";
 
 const App = () => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [imageIndex, setImageIndex] = useState(0);
 
-  const incrementIndex = () =>
-    currentIndex < screenshotData.length - 1 &&
-    setCurrentIndex(currentIndex + 1);
+  const handleClick = (direction) => {
+    if (direction === "prev" && imageIndex > 0) {
+      setImageIndex(imageIndex - 1);
+    } else if (direction === "next" && !(imageIndex >= data.length - 1)) {
+      setImageIndex(imageIndex + 1);
+    } else {
+      setImageIndex(0);
+    }
+  };
 
-  const decrementIndex = () =>
-    currentIndex > 0 && setCurrentIndex(currentIndex - 1);
+  const currentImage = data[imageIndex];
+  const currentDescription = currentImage.description;
+  const currentTitle = currentImage.title;
 
   return (
-    <div
-      style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-    >
-      <MobileFrame
-        key={screenshotData[currentIndex].id}
-        screenshotData={screenshotData[currentIndex]}
-      />
-      <button
-        title="test"
-        style={{ height: 100, width: 200 }}
-        onClick={() => incrementIndex()}
-      ></button>
-      <button
-        title="test"
-        style={{ height: 100, width: 200, backgroundColor: "red" }}
-        onClick={() => decrementIndex()}
-      ></button>
-    </div>
+    <>
+      <div className="App">
+        <div className="header-class">
+          <h1 className="app-title">MY APPLICATION PROMO</h1>
+        </div>
+        <div className="main-container">
+          <div className="description-container">
+            <h2>{currentTitle}</h2>
+            {/* <p>{currentDescription}</p> */}
+            <text>{currentDescription}</text>
+          </div>
+          <div className="image-container">
+            <img
+              className="photo"
+              src={currentImage.url}
+              alt={currentDescription}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="button-container">
+        <button onClick={() => handleClick("prev")}>Previous</button>
+        <button className="home-btn" onClick={() => handleClick("home")}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7133/7133312.png"
+            width={25}
+            height={25}
+          />
+        </button>
+        <button onClick={() => handleClick("next")}>Next</button>
+      </div>
+    </>
   );
 };
 
