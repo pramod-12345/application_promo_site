@@ -11,7 +11,7 @@ const Home = () => {
       <NavBarComponent />
       <div className="d-flex flex-column justify-content-center align-items-center" style={{height: '90vh'}}>
         <h1 className="main-title text-center text-white ">
-          Welcome
+          Welcome to App Show Case
         </h1>
         <ul className="d-flex flex-column mt-5 align-items-start w-100 ml-5">
           {data.map((data) => (
