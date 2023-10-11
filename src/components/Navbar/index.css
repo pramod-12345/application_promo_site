@@ -7,6 +7,10 @@
     font-weight: bold;
     font-size: 20px;
     font-family: 'Red Hat Display', sans-serif;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-items { 
   color: white !important;

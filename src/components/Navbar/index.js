@@ -8,6 +8,8 @@ function NavBarComponent() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary main-nav ">
       <Container>
+       
+        <Navbar.Brand className="nav-header" href="/">
         <div className="mr-3">
           <img
             src="https://www.nitpy.ac.in/assets/icons/home_icon.png"
@@ -15,7 +17,6 @@ function NavBarComponent() {
             height={25}
           />
         </div>
-        <Navbar.Brand className="nav-header" href="/">
         AppShowcase
         </Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
