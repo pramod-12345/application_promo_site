@@ -1,0 +1,16 @@
+.project-name{
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+}
+
+
+.main-img{ 
+    background-image: url('../../assets/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.main-title { 
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
