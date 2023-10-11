@@ -18,7 +18,7 @@
       },
       {
         "id": 3,
-        "title": "Dashboard",
+        "title": "Home",
         "url": "https://w0.peakpx.com/wallpaper/188/820/HD-wallpaper-oppo-android-thumbnail.jpg",
         "description": "The dashboard displays the channel available for the chat."
       },
@@ -65,7 +65,7 @@
       },
       {
         "id": 2,
-        "title": "Search Locations",
+        "title": "Search Location",
         "url": "https://w0.peakpx.com/wallpaper/188/820/HD-wallpaper-oppo-android-thumbnail.jpg",
         "description": "This screen allows users to search for locations and view the current weather conditions and forecast."
       },
@@ -82,7 +82,7 @@
     "screens": [
       {
         "id": 1,
-        "title": "Currency Converter",
+        "title": "Currency Convert",
         "url": "https://i.pinimg.com/236x/bd/35/ca/bd35caa1d66da3a15ed952b4ac1010f7.jpg",
         "description": "This screen allows users to convert between different currencies."
       },
