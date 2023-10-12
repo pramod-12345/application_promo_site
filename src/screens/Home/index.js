@@ -11,9 +11,9 @@ const Home = () => {
       <NavBarComponent />
       <div className="d-flex flex-column justify-content-center align-items-center" style={{height: '90vh'}}>
         <h1 className="main-title text-center text-white ">
-          Welcome to App Show Case
+          Welcome to AppShowCase
         </h1>
-        <ul className="d-flex flex-column mt-5 align-items-start w-100 ml-5">
+        <ul className="d-flex flex-column mt-5 align-items-start w-100 pl-5">
           {data.map((data) => (
             <li style={{fontSize: 25}} className="project-name"  key={data.id}>
               <Link  className="text-white" to={`/applications/${data.app_id}`}>

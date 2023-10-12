@@ -8,7 +8,7 @@
         "id": 1,
         "title": "Twilio Chat App",
         "url": "https://i.pinimg.com/236x/4b/05/0c/4b050ca4fcf588eedc58aa6135f5eecf.jpg",
-        "description": "This is a React Native application for chatting built with Twilio and the React Native Gifted Chat library. It allows users to engage in real-time text conversations after joining the channel."
+        "description": "This is a React Native application for chatting built with Twilio\n\n and the React Native Gifted Chat library. It allows users to engage in real-time text conversations after joining the channel."
       },
       {
         "id": 2,
